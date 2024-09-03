@@ -1,0 +1,215 @@
+:root{
+    --ghostwhite-color: ghostwhite;
+    --white-color: white;
+    --red-color: Red;
+    --crimson-color: crimson;
+    --blue-color: Blue;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('gymbg.jpeg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav{
+    margin: 3% 2%;
+    padding: 0;
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo img{
+    border: 2px solid rgb(176, 176, 255);
+    border-radius: 50%;
+    width: 40%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex: 6;
+    gap: 25px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border-bottom: 2px groove rgb(149, 149, 149);
+    border-radius: 25px;
+    box-shadow: -2px -5px 10px rgb(41, 41, 41);
+}
+
+#name{
+    flex: 1;
+    padding-left: 20px;
+    margin-bottom: -10px;
+    font: 2em sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px var(--ghostwhite-color), 1px -1px 0px var(--ghostwhite-color), -1px 1px 0px var(--ghostwhite-color), -1px -1px 0px var(--ghostwhite-color);
+    color: black;
+}
+
+#option{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#option a{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    box-shadow: 2px 3px 10px rgb(79, 79, 79);
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    transition: opacity 0.6s ease;
+}
+
+#option a:hover {
+    background-color: var(--crimson-color);
+}
+
+#option:hover > :not(:hover) {
+    background-color: rgb(245, 186, 10);
+}
+
+#name:hover{
+    background-color: transparent;
+}
+
+#sudo{
+    flex: 0.5;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 30%;
+    padding: 5% 0%;
+    border: 5px solid var(--red-color);
+    box-shadow: 0px 4px 16px var(--red-color);
+    border-radius: 25px;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 2px 2px 4px rgb(147, 145, 145);
+    font-weight: 700;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+label{
+    border-bottom:2px solid var(--ghostwhite-color) ;
+    border-top:2px solid var(--ghostwhite-color) ;
+    border-radius: 5px;
+    margin-right: 8px;
+    padding: 0px 4px;
+}
+
+input{
+    border-radius: 10px;
+    height: 2.4em;
+    width: 100%;
+}
+
+#btn{
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 24;
+    font-weight: 700;
+}
+
+#btn:hover{
+    background-color: var(--blue-color);
+    box-shadow: 2px 2px 7px rgb(108, 108, 110);
+}
+
+#BMI{
+    border-top: 2px solid var(--ghostwhite-color);
+    border-bottom: 2px solid var(--ghostwhite-color);
+    border-radius: 5px;
+}
+
+footer{
+    display: none;
+}
+@media (max-width: 580px) {
+    body{
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+    }
+    nav{
+        margin: 3% 5%;
+        max-width: fit-content;
+    }
+    #logo{
+        display: none;
+    }
+    #sudo{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    #option{
+        display: none;
+    }
+    #container{
+        position: relative;
+        min-width: 60vw;
+        max-width: fit-content;
+        min-height: 80vh;
+        max-height: 90vh;
+        padding: 0 5%;
+        margin: 5% 3%;
+        /* margin-top: 15vh; */
+        overflow: hidden;
+        font-size: 2em;
+        input{
+            max-width: 70%;
+        }
+        
+    }
+    .btn_{
+        width: 50%;
+    }
+    footer{
+        margin: 5vh 0;
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+    }
+    .last {
+        padding: 0px 15px;
+        text-decoration: none;
+        color: rgb(10, 249, 26);
+    }
+
+}

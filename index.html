@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div id="logo"><img src="logo2.png"></div>
+        <div id="nav_bar">
+            <div id="name">TR FITNESS</div>
+            <div id="option">
+                <a href="#home">Home</a>
+                <a>BMI calculator</a>
+                <a href="#about_us">About us</a>
+            </div>
+        </div>
+        <div id="sudo"></div>
+    </nav>
+
+    <hr>
+
+    <!-- calculate -->
+    <div id="container">
+        <div id="input">
+            <div>
+                <label for="Weight">Weight :</label>
+                <input type="text" id="Weight" name="Weight" placeholder="Weight in kg">
+            </div>
+            <div>
+                <label for="Height">Height :</label>
+                <input type="text" id="Height" name="Height" placeholder="Height in cm">
+            </div>
+        </div>
+        <div class="btn_"><input type="button" value="calculate" onclick="fun1()" id="btn"></div>
+        <div id="btn_a"><a id="BMI">Your BMI</a></div>
+    </div>
+    <footer>
+        <a href="#" class="last">Home</a>
+        <a href="#" class="last">About us..</a>
+        <a href="#" class="last">Contact us..</a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
